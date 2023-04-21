@@ -1,14 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdlib.h>
-int main(void)
+#include <stdio.h>
+int main(int argc, char *argv[])
 {
-char letter = 'a';
 int i;
-for (i = 0; i < 26; i++)
-{;
-putchar(letter);
-letter++;
+for (i = 0; i < 10; i++)
+{
+putchar(i + '0');
 }
 putchar('\n');
 return (0);
