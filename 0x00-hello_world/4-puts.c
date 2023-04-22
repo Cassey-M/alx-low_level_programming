@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
-* @brief Main function of the program
-* @return 0 if successful
+*Main -  A C program that prints a string to the standard output
+*
+*Return 0 if successful
 */
 int main(void)
 {
-puts("Programming is like building a multilingual puzzle");
+puts(""Programming is like building a multilingual puzzle");
 return (0);
 }
