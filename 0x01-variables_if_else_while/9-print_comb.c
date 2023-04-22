@@ -1,18 +1,23 @@
 #include <stdio.h>
 /**
-*main - prints all combinations of single digits
-*Return: Always 0 
+* main - prints all possible combinations of single-digit numbers
+*        separated by a comma and space
+*
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int i;
-for (i = 18; i < 28; i++)
-putchar(i);
-if i != 27
+int num;
+for (num = 0; num < 10; num++)
+{
+putchar(num + '0');
+if (num != 9)
 {
 putchar(',');
 putchar(' ');
 }
+}
 putchar('\n');
 return (0);
 }
+

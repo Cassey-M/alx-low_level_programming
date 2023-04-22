@@ -1,13 +1,20 @@
 #include <stdio.h>
 /**
-* main - print all strings from 0 to 9
-* Return: Always 0
+* main - Entry point
+*
+* Description: Prints all single digit numbers of base 10 starting from 0,
+* followed by a new line.
+*
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int num;
-for (num = 0; num < 10; num++)
-printf("%d", num);
-printf('\n');
+int digit = 0;
+while (digit < 10)
+{
+putchar(digit + '0');
+digit++;
+}
+putchar('\n');
 return (0);
 }
