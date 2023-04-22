@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-* @brief Main function of the program
-* @return 0 if successful
+*main - prints a string to the standard output, followed by a new line.
+*Return: Always 0
 */
 int main(void)
 {
