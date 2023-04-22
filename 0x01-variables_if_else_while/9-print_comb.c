@@ -1,21 +1,17 @@
 #include <stdio.h>
+/**
+*main - prints all combinations of single digits
+*Return: Always 0 
+*/
 int main(void)
 {
-int i, j;
-for (i = 0; i < 10; i++)
-{
-for (j = i; j < 10; j++)
-{
-putchar(i + '0');
-putchar(',');
-putchar(' ');
-putchar(j + '0');
-if (i != 9 || j != 9)
+int i;
+for (i = 18; i < 28; i++)
+putchar(i);
+if i != 27
 {
 putchar(',');
 putchar(' ');
-}
-}
 }
 putchar('\n');
 return (0);

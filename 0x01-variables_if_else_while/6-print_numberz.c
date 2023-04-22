@@ -1,16 +1,13 @@
-#include <stdlib.h>
+#include <stdio.h>
+/**
+* main - prints single digits in base 10
+* Return: Always 0
+*/
 int main(void)
 {
-putchar(48); '0'
-putchar(49); '1'
-putchar(50); '2'
-putchar(51); '3'
-putchar(52); '4'
-putchar(53); '5'
-putchar(54); '6'
-putchar(55); '7'
-putchar(56); '8'
-putchar(57); '9'
+int num;
+for (num = 0; num < 10; num++)
+putchar((num % 10) + '0');
 putchar('\n');
 return (0);
 }

@@ -1,15 +1,16 @@
-#include <stdlib.h>
+#include <stdio.h>
+/**
+* main - prints the alphabet in lowercase
+* followed by a new lin,e except q and e
+* Return: Always 0
+*/
 int main(void)
 {
-char letter = 'a';
-int i;
-for (i = 0; i < 26; i++)
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
 {
 if (letter != 'q' && letter != 'e')
-{
 putchar(letter);
-}
-letter++;
 }
 putchar('\n');
 return (0);

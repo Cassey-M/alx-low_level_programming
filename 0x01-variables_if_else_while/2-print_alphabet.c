@@ -1,12 +1,14 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-int main(int argc, char *argv[])
+/**
+ * Main - prints alpha in lowercase
+ * Return: Always 0
+ */
+int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-putchar(i + '0');
+putchar(letter);
 }
 putchar('\n');
 return (0);
