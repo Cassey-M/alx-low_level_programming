@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+* main - Entry point
+* Description: Prints all possible different combinations of three digits
+* separated by ", " and in ascending order
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 int i, j, k;

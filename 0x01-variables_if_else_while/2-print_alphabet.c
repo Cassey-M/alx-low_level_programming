@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
 * main - Entry point
 *
@@ -5,7 +6,6 @@
 * Only uses the putchar function.
 * Returns: Always 0 (Success)
 */
-#include <stdio.h>
 int main(void)
 {
 char letter = 'a';
