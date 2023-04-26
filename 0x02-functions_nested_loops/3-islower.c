@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
 * _islower - checks if a character is lowercase
