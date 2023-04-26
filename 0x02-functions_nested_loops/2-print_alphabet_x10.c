@@ -16,5 +16,4 @@ letter++;
 putchar('\n');
 i++;
 }
-putchar('\n');
 }
