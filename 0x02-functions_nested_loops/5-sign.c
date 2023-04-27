@@ -8,6 +8,12 @@
 * 0 if number is zero
 * -1 if number is less than zero
 */
+int main(void)
+{
+    int r = 5;
+    _putchar(r + '0');
+    return (0);
+}
 int print_sign(int n)
 {
 if (n > 0)
