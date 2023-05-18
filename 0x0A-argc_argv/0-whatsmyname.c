@@ -12,12 +12,11 @@ int main(int argc, char *argv[])
 char *program_name = strdup(argv[0]);
 char *file_name = strrchr(program_name, '/');
 if (file_name != NULL)
-file_name++;
-else
 {
-file_name = program_name;
+file_name[0] ='\0';
+file_name++;
 }
-printf("%s\n", file_name);
+printf("%s\n", program_name);
 free(program_name);
 (void)argc;
 return (0);

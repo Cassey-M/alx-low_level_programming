@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
-* main -  function that multiplies two numbers.
+* main - function that adds positive numbers.
 *
 * @argc: The number of command-line arguments.
 * @argv: The array of command-line argument strings.
@@ -9,17 +10,26 @@
 */
 int main(int argc, char *argv[])
 {
-int num1;
-int num2;
-int result;
-if (argc != 3)
+int sum = 0;	
+int i;
+int j;
+if (argc == 1)
+{
+printf("0\n");
+return (0);
+}
+for (i = 1; i < argc; i++)
+{
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if (!isdigit(argv[i][j]))
 {
 printf("Error\n");
 return (1);
 }
-num1 = atoi(argv[1]);
-num2 = atoi(argv[2]);
-result = num1 * num2;
-printf("%d\n", result);
+}
+sum += atoi(argv[i]);
+}
+printf("%d\n", sum);
 return (0);
 }
