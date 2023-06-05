@@ -33,12 +33,12 @@ int op_mul(int a, int b)
 return (a * b);
 }
 /**
- * op_div - Returns the result of the division of a by b
- * @a: First operand
- * @b: Second operand
- *
- * Return: The result of the division of a by b
- */
+* op_div - Returns the result of the division of a by b
+* @a: First operand
+* @b: Second operand
+*
+* Return: The result of the division of a by b
+*/
 int op_div(int a, int b)
 {
 return (a / b);
@@ -54,4 +54,3 @@ int op_mod(int a, int b)
 {
 return (a % b);
 }
-
