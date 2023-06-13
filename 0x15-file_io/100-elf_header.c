@@ -21,11 +21,11 @@ void print_elf_header(Elf64_Ehdr *header)
 {
 int i;
 printf("ELF Header:\n");
-printf("Magic:");
+printf("  Magic:   ");
 for (i = 0; i < EI_NIDENT; i++)
 printf("%02x ", header->e_ident[i]);
 printf("\n");
-printf("Class:");
+printf("  Class:                             ");
 switch (header->e_ident[EI_CLASS])
 {
 case ELFCLASSNONE:
@@ -40,7 +40,7 @@ break;
 default:
 printf("<unknown: %x>\n", header->e_ident[EI_CLASS]);
 }
-printf("Data:");
+printf("  Data:                              ");
 switch (header->e_ident[EI_DATA])
 {
 case ELFDATANONE:
@@ -55,7 +55,7 @@ break;
 default:
 printf("<unknown: %x>\n", header->e_ident[EI_DATA]);
 }
-printf("Version:");
+printf("  Version:                           ");
 switch (header->e_ident[EI_VERSION])
 {
 case EV_NONE:
@@ -67,7 +67,7 @@ break;
 default:
 printf("<unknown: %x>\n", header->e_ident[EI_VERSION]);
 }
-printf("OS/ABI:");
+printf("  OS/ABI:                            ");
 switch (header->e_ident[EI_OSABI])
 {
 case ELFOSABI_NONE:
@@ -104,7 +104,7 @@ default:
 printf("<unknown: %x>\n", header->e_ident[EI_OSABI]);
 }
 printf("ABI Version: %d\n", header->e_ident[EI_ABIVERSION]);
-printf("Type:");
+printf("  Type:                              ");
 switch (header->e_type)
 {
 case ET_NONE:
