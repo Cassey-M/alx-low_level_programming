@@ -1,5 +1,9 @@
 #include "main.h"
 #include <elf.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
 /**
 * print_error - Prints error message and exits with code 98
 * @msg: The error message
